@@ -1,0 +1,8 @@
+pyinstaller --windowed --name "Vision Access System" --icon "assets/app_icon.ico" app/main.py `
+--add-data "assets;assets" `
+--add-data "data;data" `
+--add-data "datasets;datasets" `
+--add-data "models;models" `
+--add-data "secrets;secrets" `
+--add-data "face_access.db;." `
+--collect-all facenet_pytorch
